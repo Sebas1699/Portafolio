@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre - Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======== HEADER / NAVEGACIÓN ======== -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="nav-logo">Sebastian Cogollo</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li class="nav-item"><a href="#portafolio" class="nav-link">Portafolio</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ======== SECCIÓN HERO ======== -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Hola, soy Sebastian</h1>
+                    <p class="hero-subtitle">Desarrollador de Software | Especialista en Front-End Developer</p>
+                    <p class="hero-description">
+                        Transformo ideas en soluciones digitales robustas y eficientes. Bienvenido a mi portafolio.
+                    </p>
+                    <a href="#portafolio" class="btn btn-primary">Ver mis proyectos</a>
+                </div>
+                <div class="hero-image">
+                    <!-- CAMBIA ESTA RUTA por la de tu primera foto -->
+                    <img src="img/profe.jpg" alt="Foto de Sebastian Cogollo">
+                </div>
+            </div>  
+        </section>
+
+        <!-- ======== SECCIÓN SOBRE MÍ ======== -->
+        <section id="sobre-mi" class="section about-section">
+            <div class="about-container">
+                <div class="about-image">
+                    <!-- CAMBIA ESTA RUTA por la de tu segunda foto -->
+                    <img src="img/hackers.jpg" alt="Sebastian Cogollo trabajando">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Sobre Mí</h2>
+                    <p>Soy un apasionado desarrollador de software con experiencia en la creación de aplicaciones web modernas y atractivas. Mi objetivo es combinar diseño y funcionalidad para crear experiencias de usuario excepcionales. Me encanta aprender nuevas tecnologías y enfrentar desafíos complejos.</p>
+                    <p>Cuando no estoy programando, disfruto de jugar al futbol, mirar anime y explorar las últimas tendencias en tecnología.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SECCIÓN PORTAFOLIO ======== -->
+        <section id="portafolio" class="section">
+            <h2 class="section-title">Portafolio</h2>
+            <div style="text-align: center;">
+                <p style="max-width: 600px; margin: 0 auto 2rem; color: var(--color-texto-secundario); font-size: 1.1rem;">
+                    Todos mis proyectos y contribuciones de código están disponibles en mi perfil de GitHub. ¡Te invito a explorarlos!
+                </p>
+                <a href="https://github.com/Sebas1699?tab=repositories" class="btn btn-primary" target="_blank">Ver mi GitHub</a>
+            </div>
+        </section>
+
+        <!-- ======== SECCIÓN CONTACTO ======== -->
+        <section id="contacto" class="section contact-section">
+            <h2 class="section-title">Hablemos</h2>
+            <p>Si tienes un proyecto en mente, una oportunidad laboral o simplemente quieres saludar, no dudes en contactarme.</p>
+            <div class="contact-buttons">
+                <!-- El enlace de WhatsApp usa el código de país (57 para Colombia) -->
+                <a href="https://wa.me/573217533068" class="btn btn-secondary" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <div class="email-display">
+                    <i class="fa-regular fa-envelope"></i> sebastiancogollopalomino@gmail.com
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Sebastian Cogollo. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/Sebas1699" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sebastian-cogollo-palomino-6224a0397/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/sebastian.cogollo99/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/sebastian.cogollo.9085/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
