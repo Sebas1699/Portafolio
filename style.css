@@ -172,6 +172,40 @@ body {
     line-height: 1.8;
 }
 
+/* ======== SECCIÓN HABILIDADES ======== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    background-color: var(--color-tarjeta);
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: var(--sombra-suave);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.skill-item i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.skill-item span {
+    font-weight: 500;
+    color: var(--color-texto-principal);
+    font-size: 1rem;
+}
+
 /* ======== SECCIÓN PORTAFOLIO ======== */
 .filtros-container {
     display: flex;
@@ -268,6 +302,11 @@ body {
     text-decoration: underline;
 }
 
+/* ======== SECCIÓN CV ======== */
+.cv-section {
+    background-color: var(--color-tarjeta);
+}
+
 /* ======== SECCIÓN CONTACTO ======== */
 .contact-section {
     background-color: var(--color-tarjeta);
@@ -354,22 +393,56 @@ body {
     vertical-align: middle;
 }
 
-/* ======== ESTILOS RESPONSIVE ======== */
-@media (max-width: 900px) {
+/*
+===================================================================
+======== ESTILOS RESPONSIVE (MEDIA QUERIES) ========
+===================================================================
+*/
+
+/* ======== Para Tablets (hasta 992px) ======== */
+@media (max-width: 992px) {
+    .section {
+        padding: 4rem 1.5rem;
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
     }
+
     .hero-content {
         text-align: center;
         order: 2; /* El texto aparecerá debajo de la imagen en móvil */
     }
+
     .hero-image {
         order: 1;
         margin-bottom: 2rem;
     }
+
     .about-container {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+/* ======== Para Móviles (hasta 768px) ======== */
+@media (max-width: 768px) {
+    .nav-menu {
+        /* Esto es una solución simple. Idealmente aquí iría un menú de hamburguesa */
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
     }
     .contact-buttons {
         flex-direction: column;
