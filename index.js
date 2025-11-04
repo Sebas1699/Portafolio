@@ -26,4 +26,27 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Lógica para el Modal de Imágenes
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("modal-img");
+    const clickableImages = document.querySelectorAll('.clickable-img');
+    const closeModal = document.querySelector(".close-modal");
+
+    clickableImages.forEach(img => {
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+    });
+
+    // Función para cerrar el modal
+    function closeImageModal() {
+        modal.style.display = "none";
+    }
+
+    // Cerrar al hacer clic en la 'X'
+    closeModal.onclick = closeImageModal;
+    // Cerrar al hacer clic fuera de la imagen
+    modal.onclick = closeImageModal;
 });
